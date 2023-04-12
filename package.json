@@ -1,0 +1,49 @@
+{
+  "name": "@refractedlabs/utils",
+  "version": "0.1.0",
+  "description": "Common utilities for logging and configuration",
+  "author": "amin <amin@prismprotocol.app>",
+  "homepage": "https://github.com/refractedlabs/utils",
+  "license": "GPL Version 2.0 or a later version",
+  "scripts": {
+    "compile": "rm -rf lib/* && tsc"
+  },
+  "licenses": [
+    {
+      "type": "GPL Version 2.0 or a later version",
+      "url": "https://github.com/prism-finance/prism-contracts/blob/main/LICENSE.md"
+    }
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/refractedlabs/utils"
+  },
+  "dependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "js-yaml": "^4.1.0",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "winston-syslog": "^2.7.0",
+    "@cosmjs/socket": "0.27.0",
+    "@cosmjs/json-rpc": "0.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
