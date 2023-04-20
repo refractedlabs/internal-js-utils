@@ -46,7 +46,7 @@ export function initLogger(c: LogConfiguration): void {
                 return `[${timestamp}] ${name} ${level}: ${message} Error: ${JSON.stringify(error)}\nStack: ${error.stack}`;
             })
         )
-    });
+    }).child({name: "root"});
     commonLogger = rootLogger.child({name: "common"})
 }
 
