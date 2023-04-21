@@ -27,7 +27,8 @@ function updateConfigurationFromEnv(configuration: any, prefix?: string): void {
 function parseValue(key: string, val: any) {
     const envElement = process.env[camelCaseToDashCase(key)];
     if (envElement)
-        return typeof val === "number" ? Number(envElement) : envElement
+        return typeof val === "number" ? Number(envElement) :
+            typeof val === "boolean" ? envElement == "true" : envElement
     return val
 }
 
