@@ -79,8 +79,14 @@ export class TendermintWebsocketClient {
                 this.requests.delete(id)
             }
         })
-        return stream.map(result => (result as any)?.result?.events)
-            .filter(events => events != undefined)//filter out the very first result events since it is undefined
+        return stream.map(result => {
+            const events = (result as any)?.result?.events;
+            return events ? {
+                events,
+                blockHeight: (result as any)?.result?.data.value.block.header.height,
+                blockTime: (result as any)?.result?.data.value.block.header.time,
+            } : undefined
+        }).filter(result => result != undefined)//filter out the very first result events since it is undefined
     }
 
     destroy() {
