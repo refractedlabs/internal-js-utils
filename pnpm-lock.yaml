@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cosmjs/json-rpc': 0.27.0
-  '@cosmjs/socket': 0.27.0
+  '@cosmjs/json-rpc': 0.31.0
+  '@cosmjs/socket': 0.31.0
   '@types/js-yaml': ^4.0.5
   '@types/node': ^18.15.11
   '@typescript-eslint/eslint-plugin': ^5.58.0
@@ -18,8 +18,8 @@ specifiers:
   winston-syslog: ^2.7.0
 
 dependencies:
-  '@cosmjs/json-rpc': 0.27.0
-  '@cosmjs/socket': 0.27.0
+  '@cosmjs/json-rpc': 0.31.0
+  '@cosmjs/socket': 0.31.0
   '@types/js-yaml': 4.0.5
   js-yaml: 4.1.0
   winston: 3.8.2
@@ -43,17 +43,17 @@ packages:
     engines: {node: '>=0.1.90'}
     dev: false
 
-  /@cosmjs/json-rpc/0.27.0:
-    resolution: {integrity: sha512-Q6na5KPYDD90QhlPZTInquwBycDjvhZvWwpV1TppDd2Em8S1FfN3ePiV2YCf4XzXREU5YPFSHzh5MHK/WhQY3w==}
+  /@cosmjs/json-rpc/0.31.0:
+    resolution: {integrity: sha512-Ix2Cil2qysiLNrX+E0w3vtwCrqxGVq8jklpLA7B2vtMrw7tru/rS65fdFSy8ep0wUNLL6Ud32VXa5K0YObDOMA==}
     dependencies:
-      '@cosmjs/stream': 0.27.0
+      '@cosmjs/stream': 0.31.0
       xstream: 11.14.0
     dev: false
 
-  /@cosmjs/socket/0.27.0:
-    resolution: {integrity: sha512-lOd0s6gLyjdjcs8xnYuS2IXRqBLUrI76Bek5wsia+m5CyUvHjRbbd7+nZiznbtVjApBlIwHGkiklLg3/byxkAA==}
+  /@cosmjs/socket/0.31.0:
+    resolution: {integrity: sha512-WDh9gTyiP3OCXvSAJJn33+Ef3XqMWag+bpR1TdMBxTmlTxuvU+kPy4cf6P2OF+jkkUBEA5Se2EAju0eFbJMT+w==}
     dependencies:
-      '@cosmjs/stream': 0.27.0
+      '@cosmjs/stream': 0.31.0
       isomorphic-ws: 4.0.1_ws@7.5.9
       ws: 7.5.9
       xstream: 11.14.0
@@ -62,8 +62,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@cosmjs/stream/0.27.0:
-    resolution: {integrity: sha512-D9mXHqS6y7xrThhUg5SCvMjiVQ8ph9f7gAuWlrXhqVJ5FqrP6OyTGRbVyGGM91d5Jj7N7oidQ+hOfc34vKFgeg==}
+  /@cosmjs/stream/0.31.0:
+    resolution: {integrity: sha512-Y+aSHwhHkLGIaQOdqRob+yga2zr9ifl9gZDKD+B7+R5pdWN5f2TTDhYWxA6YZcZ6xRmfr7u8a7tDh7iYLC/zKA==}
     dependencies:
       xstream: 11.14.0
     dev: false

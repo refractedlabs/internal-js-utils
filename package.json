@@ -1,6 +1,6 @@
 {
   "name": "@refractedlabs/utils",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "Common utilities for logging and configuration",
   "author": "amin <amin@prismprotocol.app>",
   "homepage": "https://github.com/refractedlabs/utils",
@@ -28,13 +28,13 @@
     "url": "https://github.com/refractedlabs/utils"
   },
   "dependencies": {
+    "@cosmjs/json-rpc": "0.31.0",
+    "@cosmjs/socket": "0.31.0",
     "@types/js-yaml": "^4.0.5",
     "js-yaml": "^4.1.0",
     "winston": "^3.8.2",
     "winston-daily-rotate-file": "^4.7.1",
-    "winston-syslog": "^2.7.0",
-    "@cosmjs/socket": "0.27.0",
-    "@cosmjs/json-rpc": "0.27.0"
+    "winston-syslog": "^2.7.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
