@@ -1,21 +1,35 @@
 import {createLogger, format, Logger, transports} from "winston";
 import DailyRotateFile from "winston-daily-rotate-file";
+import { JsonClassType, JsonProperty } from "jackson-js";
 
-export interface LogConfiguration {
+export class LogConfiguration {
+    @JsonProperty()
+    @JsonClassType({ type: () => [String] })
     level: string;
+    @JsonProperty()
+    @JsonClassType({ type: () => [String] })
     dirname: string;
+    @JsonProperty()
+    @JsonClassType({ type: () => [String] })
     filename: string;
+    @JsonProperty()
+    @JsonClassType({ type: () => [String] })
     maxSize: string;
+    @JsonProperty()
+    @JsonClassType({ type: () => [Number] })
     maxFiles: number;
+
+
+    constructor(level: string, dirname: string, filename: string, maxSize: string, maxFiles: number) {
+        this.level = level;
+        this.dirname = dirname;
+        this.filename = filename;
+        this.maxSize = maxSize;
+        this.maxFiles = maxFiles;
+    }
 }
 
-let logConfig: LogConfiguration = {
-    level: 'info',
-    dirname: 'logs',
-    filename: 'app.log',
-    maxSize: '1mb',
-    maxFiles: 10
-};
+let logConfig = new LogConfiguration('info','logs','app.log','1mb',10)
 
 export function getLogConfig(): LogConfiguration {
     return logConfig;

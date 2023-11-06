@@ -1,5 +1,7 @@
-import {load} from "js-yaml";
-import {readFile, writeFile} from "fs/promises";
+import { load } from "js-yaml";
+import { readFile, writeFile } from "fs/promises";
+import { ObjectMapper } from "jackson-js";
+import { defaultDeserializers } from "./validation";
 
 export async function saveConfigAsEnv(configuration: any, file: string, separateByNewLine: boolean = false) {
     const m = toEnv(configuration, separateByNewLine)
@@ -7,10 +9,17 @@ export async function saveConfigAsEnv(configuration: any, file: string, separate
     await writeFile(file, data, "utf8")
 }
 
-export async function loadConfig<C>(file: string): Promise<C> {
-    const config = load(await readFile(file, "utf8")) as C;
-    updateConfigurationFromEnv(config)
-    return config;
+export async function loadConfig(file: string): Promise<unknown> {
+    return load(await readFile(file, "utf8"));
+}
+
+export async function loadTypedConfig<C>(file: string, type: any): Promise<C> {
+    const config = load(await readFile(file, "utf8"));
+    const objectMapper = new ObjectMapper();
+    return objectMapper.parse<C>(JSON.stringify(config), {
+        mainCreator: () => [type],
+        deserializers: defaultDeserializers
+    });
 }
 
 function updateConfigurationFromEnv(configuration: any, prefix?: string): void {
