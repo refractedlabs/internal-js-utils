@@ -1,6 +1,6 @@
 {
   "name": "@refractedlabs/utils",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Common utilities for logging, configuration, and cosmos clients",
   "author": "amin <amin@refractedlabs.com>",
   "homepage": "https://github.com/refractedlabs/utils",
@@ -23,15 +23,15 @@
     "url": "https://github.com/refractedlabs/utils"
   },
   "dependencies": {
-    "@cosmjs/amino": "0.32.1",
-    "@cosmjs/proto-signing": "0.32.1",
-    "@cosmjs/stargate": "0.32.1",
-    "@cosmjs/tendermint-rpc": "0.32.1",
+    "@cosmjs/amino": "0.32.2",
+    "@cosmjs/proto-signing": "0.32.2",
+    "@cosmjs/stargate": "0.32.2",
+    "@cosmjs/tendermint-rpc": "0.32.2",
     "@improbable-eng/grpc-web": "^0.15.0",
     "@improbable-eng/grpc-web-node-http-transport": "^0.15.0",
     "@refractedlabs/cosmology-lcd-fork": "0.13.3",
-    "browser-headers": "^0.4.1",
     "@types/js-yaml": "^4.0.5",
+    "browser-headers": "^0.4.1",
     "jackson-js": "^1.1.0",
     "js-yaml": "^4.1.0",
     "winston": "^3.8.2",
