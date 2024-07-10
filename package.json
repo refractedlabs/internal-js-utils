@@ -1,6 +1,6 @@
 {
   "name": "@refractedlabs/utils",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Common utilities for logging, configuration, and cosmos clients",
   "author": "amin <amin@refractedlabs.com>",
   "packageManager": "^pnpm@9.1.2",
