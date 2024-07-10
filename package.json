@@ -1,6 +1,6 @@
 {
   "name": "@refractedlabs/utils",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Common utilities for logging, configuration, and cosmos clients",
   "author": "amin <amin@refractedlabs.com>",
   "homepage": "https://github.com/refractedlabs/utils",
