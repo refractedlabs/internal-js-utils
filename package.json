@@ -3,7 +3,8 @@
   "version": "0.6.0",
   "description": "Common utilities for logging, configuration, and cosmos clients",
   "author": "amin <amin@refractedlabs.com>",
-  "packageManager": "^pnpm@9.1.2""homepage": "https://github.com/refractedlabs/utils",
+  "packageManager": "^pnpm@9.1.2",
+  "homepage": "https://github.com/refractedlabs/utils",
   "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "compile": "rm -rf lib/* && tsc"
