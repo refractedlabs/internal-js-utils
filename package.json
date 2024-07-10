@@ -1,10 +1,10 @@
 {
-  "name": "@refractedlabs/utils",
+  "name": "@refractedlabs/internal-js-utils",
   "version": "0.6.4",
   "description": "Common utilities for logging, configuration, and cosmos clients",
   "author": "amin <amin@refractedlabs.com>",
-  "packageManager": "pnpm@^9.1.2",
-  "homepage": "https://github.com/refractedlabs/utils",
+  "packageManager": "pnpm@^9.5.0",
+  "homepage": "https://github.com/refractedlabs/internal-js-utils",
   "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "compile": "rm -rf lib/* && tsc"
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/refractedlabs/utils"
+    "url": "https://github.com/refractedlabs/internal-js-utils"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
