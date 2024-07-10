@@ -3,7 +3,7 @@
   "version": "0.6.1",
   "description": "Common utilities for logging, configuration, and cosmos clients",
   "author": "amin <amin@refractedlabs.com>",
-  "packageManager": "^pnpm@9.1.2",
+  "packageManager": "pnpm@^9.1.2",
   "homepage": "https://github.com/refractedlabs/utils",
   "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
