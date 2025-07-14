@@ -24,16 +24,17 @@
     "url": "https://github.com/refractedlabs/internal-js-utils"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0",
+    "@cosmjs/encoding": "0.32.2",
+    "@cosmjs/json-rpc": "0.32.2",
+    "@cosmjs/socket": "0.32.2",
+    "@keplr-wallet/unit": "^0.12.251",
+    "@protobufjs/eventemitter": "1.1.0",
     "jackson-js": "^1.1.0",
+    "js-yaml": "^4.1.0",
     "winston": "^3.8.2",
     "winston-daily-rotate-file": "^4.7.1",
     "winston-syslog": "^2.7.0",
-    "@cosmjs/encoding": "0.32.2",
-    "@cosmjs/socket": "0.32.2",
-    "@cosmjs/json-rpc": "0.32.2",
-    "xstream": "11.14.0",
-    "@protobufjs/eventemitter": "1.1.0"
+    "xstream": "11.14.0"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
