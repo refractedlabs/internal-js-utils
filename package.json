@@ -1,6 +1,6 @@
 {
   "name": "@refractedlabs/internal-js-utils",
-  "version": "0.6.5",
+  "version": "0.7.0",
   "description": "Common utilities for logging, configuration, and cosmos clients",
   "author": "amin <amin@refractedlabs.com>",
   "packageManager": "pnpm@^9.5.0",
